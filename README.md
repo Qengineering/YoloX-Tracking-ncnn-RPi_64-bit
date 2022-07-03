@@ -1,5 +1,9 @@
 # YoloX Byte Tracking
-https://user-images.githubusercontent.com/44409029/177048330-11932897-b078-42c9-ae24-ecf89eec06be.mp4
+
+
+
+https://user-images.githubusercontent.com/44409029/177049073-5991f8b7-4b80-4f08-8c77-0cd573b45715.mp4
+
 
 ## YoloX with Byte Tracking for the ncnn framework. <br/>
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
