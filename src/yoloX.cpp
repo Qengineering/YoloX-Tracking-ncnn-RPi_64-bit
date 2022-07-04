@@ -102,13 +102,6 @@ public:
 
 DEFINE_LAYER_CREATOR(YoloV5Focus)
 
-//struct Object
-//{
-//    cv::Rect_<float> rect;
-//    int label;
-//    float prob;
-//};
-
 struct GridAndStride
 {
     int grid0;
