@@ -363,7 +363,6 @@ int main(int argc, char** argv)
     }
     int fps = cap.get(CAP_PROP_FPS);
 
-    cout << "FPS : "<<fps<<endl;
     BYTETracker tracker(fps, 30);
 
     cout << "Start grabbing, press ESC on Live window to terminate" << endl;
