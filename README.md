@@ -39,13 +39,27 @@ $ rm master.zip <br/>
 $ rm LICENSE <br/>
 $ rm README.md <br/> <br/>
 Your *MyDir* folder must now look like this: <br/> 
-palace.mp4 <br/>
-Walkers.mp4 <br/>
-YoloX_Byte_Track.cpb <br/>
-yoloxN.bin <br/>
-yoloxN.param <br/>
-**include** folder <br/>
-**src** folder <br/> 
+```
+├── include
+│   ├── BYTETracker.h
+│   ├── dataType.h
+│   ├── kalmanFilter.h
+│   ├── lapjv.h
+│   └── STrack.h
+├── palace.mp4
+├── src
+│   ├── BYTETracker.cpp
+│   ├── kalmanFilter.cpp
+│   ├── lapjv.cpp
+│   ├── STrack.cpp
+│   ├── utils.cpp
+│   └── yoloX.cpp
+├── tree.txt
+├── Walkers.mp4
+├── YoloX_Byte_Track.cbp
+├── yoloxN.bin
+└── yoloxN.param
+```
 
 ------------
 
