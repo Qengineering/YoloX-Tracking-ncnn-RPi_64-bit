@@ -1,14 +1,21 @@
 # YoloX Byte Tracking
 
-
-
-https://user-images.githubusercontent.com/44409029/177049073-5991f8b7-4b80-4f08-8c77-0cd573b45715.mp4
-
+https://user-images.githubusercontent.com/44409029/177163299-4a73e807-605e-4fb1-ad79-b00e15786784.mp4
 
 ## YoloX with Byte Tracking for the ncnn framework. <br/>
+The model tries to keep track of the individual objects found in the scenes. The example video follows the walkers as they stroll along. Obvious, not a simple task. Not only does the detection needs to be at a robust level. You also have to solve occlusion as the walkers pass each other.
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
 Paper: https://arxiv.org/pdf/2110.06864v2.pdf<br/><br/>
 Special made for a bare Raspberry Pi 4, see [Q-engineering deep learning examples](https://qengineering.eu/deep-learning-examples-on-raspberry-32-64-os.html)
+
+------------
+
+## Benchmark.
+| Model  | size | objects | mAP | RPi 4 64-OS 1950 MHz |
+| ------------- | :-----:  | :-----:  | :-----:  | :-------------: |
+| [Tensorflow lite](https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4) | 300x300 | 80 | 21.0  |  24.6 FPS |
+| [NanoDet](https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4) | 320x320 | 80 | 20.6  | 11.8 FPS |
+| [YoloX](https://github.com/Qengineering/YoloX-Tracking-ncnn-RPi_64-bit) | 416x416 | 80 | 25.8 | **7.2 FPS** |
 
 ------------
 
