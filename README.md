@@ -14,7 +14,7 @@ Special made for a bare Raspberry Pi 4, see [Q-engineering deep learning example
 ## Benchmark.
 | Model  | size | objects | mAP | RPi 4 64-OS 1950 MHz |
 | ------------- | :-----:  | :-----:  | :-----:  | :-------------: |
-| [Tensorflow lite](https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4) | 300x300 | 80 | 21.0  |  24.6 FPS |
+| [Tensorflow lite](https://github.com/Qengineering/TensorFlow_Lite-Tracking-RPi_64-bit) | 300x300 | 80 | 21.0  |  24.6 FPS |
 | [NanoDet](https://github.com/Qengineering/NanoDet-ncnn-Raspberry-Pi-4) | 320x320 | 80 | 20.6  | 11.8 FPS |
 | [YoloX](https://github.com/Qengineering/YoloX-Tracking-ncnn-RPi_64-bit) | 416x416 | 80 | 25.8 | **7.2 FPS** |
 
