@@ -86,5 +86,95 @@ Many thanks to [nihui](https://github.com/nihui/) and [ifzhang](https://github.c
 
 ------------
 
+## CMake.
+Instead of Code::Blocks, you can now use CMake to build the application.<br>
+Please follow the next instructions. Assuming your in the 'main' directory.<br>
+```
+.
+├── bin
+├── build
+├── CMakeLists.txt
+├── include
+├── obj
+├── palace.mp4
+├── src
+├── tree.txt
+├── Walkers.mp4
+├── YoloX_Byte_Track.cbp
+├── YoloX_Byte_Track.depend
+├── YoloX_Byte_Track.layout
+├── yoloxN.bin
+└── yoloxN.param
+```
+Create a build folder
+```
+$ mkdir build
+$ cd build
+```
+Run CMake and Make
+```
+$ cmake ..
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /usr/local (found version "4.5.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/software/YoloX ByteTrack/build
+```
+$  make  -j4
+```
+Scanning dependencies of target YoloX_Track
+[ 28%] Building CXX object CMakeFiles/YoloX_Track.dir/src/BYTETracker.cpp.o
+[ 28%] Building CXX object CMakeFiles/YoloX_Track.dir/src/STrack.cpp.o
+[ 57%] Building CXX object CMakeFiles/YoloX_Track.dir/src/kalmanFilter.cpp.o
+[ 57%] Building CXX object CMakeFiles/YoloX_Track.dir/src/lapjv.cpp.o
+[ 71%] Building CXX object CMakeFiles/YoloX_Track.dir/src/utils.cpp.o
+[ 85%] Building CXX object CMakeFiles/YoloX_Track.dir/src/yoloX.cpp.o
+[100%] Linking CXX executable ../YoloX_Track
+[100%] Built target YoloX_Track
+```
+$ cd ..<br>
+$ tree -L 1
+```
+.
+├── bin
+├── build
+├── CMakeLists.txt
+├── include
+├── obj
+├── palace.mp4
+├── src
+├── tree.txt
+├── Walkers.mp4
+├── YoloX_Byte_Track.cbp
+├── YoloX_Byte_Track.depend
+├── YoloX_Byte_Track.layout
+├── yoloxN.bin
+├── yoloxN.param
+└── YoloX_Track
+```
+Run
+```
+$ ./YoloX_Track
+```
+Once YoloX_Track works, you may remove the build directory, since we don't need it any more.
+```
+$ sudo rm -rf build
+```
+
+------------
+
 [![paypal](https://qengineering.eu/images/TipJarSmall4.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CPZTM5BB3FCYL) 
 
