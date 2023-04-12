@@ -87,7 +87,7 @@ Many thanks to [nihui](https://github.com/nihui/) and [ifzhang](https://github.c
 ------------
 
 ## CMake.
-Instead of Code::Blocks, you can now use CMake to build the application.<br>
+Instead of Code::Blocks, you can also use CMake to build the application.<br>
 Please follow the next instructions. Assuming your in the 'main' directory.<br>
 ```
 .
